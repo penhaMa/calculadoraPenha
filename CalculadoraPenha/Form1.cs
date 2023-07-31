@@ -60,9 +60,5 @@ namespace CalculadoraPenha
             textBox2.Text = "O Resultado é .....";
         }// Limpar
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }//Fim da Classe
 }//Fim do Projeto

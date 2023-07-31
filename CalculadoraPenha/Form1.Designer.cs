@@ -91,7 +91,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(39, 134);
+            this.textBox2.Location = new System.Drawing.Point(39, 123);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(218, 37);
             this.textBox2.TabIndex = 6;
@@ -126,7 +126,7 @@
             // 
             this.button7.BackColor = System.Drawing.Color.MediumPurple;
             this.button7.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(106, 185);
+            this.button7.Location = new System.Drawing.Point(106, 174);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(80, 31);
             this.button7.TabIndex = 9;
