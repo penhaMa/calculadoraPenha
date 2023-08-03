@@ -21,44 +21,44 @@ namespace CalculadoraPenha
 
         private void button3_Click(object sender, EventArgs e)
         {
-            textBox2.Text = "" + this.modelo.Subtracao(Convert.ToDouble(maskedTextBox1.Text));
+            maskedTextBox1.Text = "" + this.modelo.Subtracao(Convert.ToDouble(maskedTextBox1.Text));
         }// Subtração
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox2.Text = "" + this.modelo.Somar(Convert.ToDouble(maskedTextBox1.Text));
-
+            maskedTextBox1.Text = "" + this.modelo.Somar(Convert.ToDouble(maskedTextBox1.Text));
         }// Soma
 
         private void button5_Click(object sender, EventArgs e)
         {
-            textBox2.Text = "" + this.modelo.Raiz(Convert.ToDouble(maskedTextBox1.Text));
+            maskedTextBox1.Text = "" + this.modelo.Raiz(Convert.ToDouble(maskedTextBox1.Text));  
         }// Raiz
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox2.Text = "" + this.modelo.Divisao(Convert.ToDouble(maskedTextBox1.Text));
+            maskedTextBox1.Text = "" + this.modelo.Divisao(Convert.ToDouble(maskedTextBox1.Text));  
         }// Divisão
 
         private void button4_Click(object sender, EventArgs e)
         {
-            textBox2.Text = "" + this.modelo.Multiplicacao(Convert.ToDouble(maskedTextBox1.Text));
+            maskedTextBox1.Text = "" + this.modelo.Multiplicacao(Convert.ToDouble(maskedTextBox1.Text));  
         }// Multiplicação
 
         private void button6_Click(object sender, EventArgs e)
         {
-            textBox2.Text = "" + this.modelo.Potencia(Convert.ToDouble(maskedTextBox1.Text));
+            maskedTextBox1.Text = "" + this.modelo.Potencia(Convert.ToDouble(maskedTextBox1.Text));
         }// Potência
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }// Resultado
 
         private void button7_Click(object sender, EventArgs e)
         {
-            textBox2.Text = "O Resultado é .....";
+            maskedTextBox1.Text = "";
+            this.modelo.ConsultarOperacao = 0;
         }// Limpar
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }//Resultado
 
     }//Fim da Classe
 }//Fim do Projeto

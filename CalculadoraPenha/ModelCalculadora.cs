@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,22 +33,35 @@ namespace CalculadoraPenha
 
         public double Divisao(double num)
         {
+            if (ConsultarOperacao <= 0)
+            {
+                return ConsultarOperacao = num;
+            }
             return ConsultarOperacao /= num;
         }//Fim do Divisão
 
         public double Multiplicacao(double num)
         {
+            if (ConsultarOperacao <= 0)
+            {
+                return ConsultarOperacao = num;
+            }
             return ConsultarOperacao *= num;
         }//Fim do Multiplicação
 
         public double Raiz(double num)
         {
-            return ConsultarOperacao /= num / num;
+            return Math.Sqrt(ConsultarOperacao = num);
         }//Fim do Raiz
 
         public double Potencia(double num)
         {
-            return ConsultarOperacao *= num * num;
+            if (ConsultarOperacao <= 0)
+            {
+                return ConsultarOperacao = num;
+            }
+            return Math.Pow(ConsultarOperacao, num);
         }//Fim do Potência
+
     }
 }
